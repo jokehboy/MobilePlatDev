@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ben Hammond | S1709378
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/panel_bg">
+
+    <LinearLayout
+        android:id="@+id/layout_title_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/layout_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7"
+            android:autoSizeTextType="uniform"
+            android:text="TextView"
+            android:background="#6c4bbd"
+            android:lines="2"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/layout_magnitude"
+            android:layout_width="0dp"
+            android:layout_height="73dp"
+            android:layout_weight=".3"
+            android:text="TextView"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_list_horiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_title_top"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/panel_front"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0.3"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="Lat/Long"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/layout_latlong"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/panel_front"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:layout_weight="0.3"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+                android:text="Date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/layout_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".7"
+                android:autoSizeTextType="uniform"
+                android:gravity="center"
+
+                android:text="TextView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

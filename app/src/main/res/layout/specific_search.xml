@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ben Hammond | S1709378
+-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/panel_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_search_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar2"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/layout_search_button_date_single"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:text="Sort by date" />
+
+        <Button
+            android:id="@+id/layout_search_buttons_date_range"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:text="Sort by date range" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_search_buttons"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_search_group_deepest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/layout_search_title_deepest"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/panel_main"
+                android:gravity="center"
+                android:text="Deepest" />
+
+            <TextView
+                android:id="@+id/layout_search_field_deepest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/panel_front"
+                android:text="TextView"
+                android:autoSizeTextType="uniform"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_search_group_shallowest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/layout_search_title_shallowest"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/panel_main"
+                android:gravity="center"
+                android:text="Shallowest" />
+
+            <TextView
+                android:id="@+id/layout_search_field_shallowest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/panel_front"
+                android:text="TextView"
+                android:autoSizeTextType="uniform"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_search_group_largest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/layout_search_title_largest"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/panel_main"
+                android:gravity="center"
+                android:text="Largest" />
+
+            <TextView
+                android:id="@+id/layout_search_field_largest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/panel_front"
+                android:text="TextView"
+                android:autoSizeTextType="uniform"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_search_group_north"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+           >
+
+
+            <TextView
+                android:id="@+id/layout_search_title_north"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/panel_main"
+                android:gravity="center"
+                android:text="Most Northerly" />
+
+            <TextView
+                android:id="@+id/layout_search_field_north"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/panel_front"
+                android:text="TextView"
+                android:autoSizeTextType="uniform"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_search_group_south"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/layout_search_title_south"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/panel_main"
+                android:gravity="center"
+                android:text="Most Southerly" />
+
+            <TextView
+                android:id="@+id/layout_search_field_south"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/panel_front"
+                android:text="TextView"
+                android:autoSizeTextType="uniform"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_search_group_east"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/layout_search_title_east"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/panel_main"
+                android:gravity="center"
+                android:text="Most Easterly" />
+
+            <TextView
+                android:id="@+id/layout_search_field_east"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/panel_front"
+                android:text="TextView"
+                android:autoSizeTextType="uniform"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_search_group_west"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/layout_search_title_west"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:autoSizeTextType="uniform"
+                android:background="@color/panel_main"
+                android:gravity="center"
+                android:text="Most Westerly" />
+
+            <TextView
+                android:id="@+id/layout_search_field_west"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/panel_front"
+                android:text="TextView"
+                android:autoSizeTextType="uniform"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

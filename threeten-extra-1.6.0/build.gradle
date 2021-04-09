@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('threeten-extra-1.6.0.jar'))

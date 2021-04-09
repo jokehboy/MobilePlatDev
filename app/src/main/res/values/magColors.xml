@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Ben Hammond | S1709378
+-->
+<resources>
+    <color name="lvl_0">#35cc35</color>
+    <color name="lvl_0.5">#44cc35</color>
+    <color name="lvl_1">#53cc35</color>
+    <color name="lvl_1.5">#62cc35</color>
+    <color name="lvl_2">#71cc35</color>
+    <color name="lvl_2.5">#81cc35</color>
+    <color name="lvl_3">#90cc35</color>
+    <color name="lvl_3.5">#9fcc35</color>
+    <color name="lvl_4">#aecc35</color>
+    <color name="lvl_4.5">#bdcc35</color>
+    <color name="lvl_5">#cccc35</color>
+    <color name="lvl_5.5">#ccbd35</color>
+    <color name="lvl_6">#ccae35</color>
+    <color name="lvl_6.5">#cc9f35</color>
+    <color name="lvl_7">#cc9035</color>
+    <color name="lvl_7.5">#cc8135</color>
+    <color name="lvl_8">#cc7135</color>
+    <color name="lvl_8.5">#cc6235</color>
+    <color name="lvl_9">#cc5335</color>
+    <color name="lvl_9.5">#cc4435</color>
+    <color name="lvl_10">#cc3535</color>
+</resources>
